@@ -1,4 +1,55 @@
-img {
+p {
+    font-family: Raleway;
+    margin-left: 1.66%;
+    font-weight: 800;
+    font-size: 36px;
+    border-bottom: 2px solid black;
+    width: 30%;
+    padding-bottom: 20px;
+}
+
+.image {
+    height: 300px;
     width: 30%;
     float: left;
+    margin: 1.66%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.image1 {
+    background-image: url(./s6images/1.jpg)
+}
+
+.image2 {
+    background-image: url(./s6images/2.jpg)
+}
+
+.image3 {
+    background-image: url(./s6images/3.jpg)
+}
+
+.image4 {
+    background-image: url(./s6images/4.jpg)
+}
+
+.image5 {
+    background-image: url(./s6images/5.jpg)
+}
+
+.image6 {
+    background-image: url(./s6images/6.jpg);
+    filter: grayscale(100%)
+}
+
+.image7 {
+    background-image: url(./s6images/7.jpg)
+}
+
+.image8 {
+    background-image: url(./s6images/8.jpg)
+}
+
+.image9 {
+    background-image: url(./s6images/9.jpg)
 }
