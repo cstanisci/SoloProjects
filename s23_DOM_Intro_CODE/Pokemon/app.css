@@ -1,7 +1,16 @@
 .pokemon {
-    display: inline-block;
-    text-align: center;
+	display: inline-block;
+	text-align: center;
 }
 .pokemon img {
-    display: block;
+	display: block;
+}
+
+div {
+	display: inline-block;
+	text-align: center;
+}
+
+img {
+	display: block;
 }
