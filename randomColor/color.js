@@ -13,4 +13,5 @@ button.addEventListener('click', function () {
 	const newColor = makeRandColor();
 	body.style.backgroundColor = newColor;
 	h1.innerText = newColor;
+	kit;
 });
