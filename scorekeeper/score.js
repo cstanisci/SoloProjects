@@ -7,7 +7,6 @@ const playto = document.querySelector('#playto');
 
 let p1score = 0;
 let p2score = 0;
-let winningScore = 5;
 let isGameOver = false;
 
 p1button.addEventListener('click', function () {
@@ -15,8 +14,10 @@ p1button.addEventListener('click', function () {
 		p1score += 1;
 		if (p1score === winningScore) {
 			isGameOver = true;
-			spanOne.classList.add('winner');
-			spanTwo.classList.add('loser');
+			spanOne.classList.add('has-text-success');
+			spanTwo.classList.add('has-text-danger');
+			p1button.disabled = true;
+			p2button.disabled = true;
 		}
 		spanOne.innerText = p1score;
 	}
@@ -27,8 +28,10 @@ p2button.addEventListener('click', function () {
 		p2score += 1;
 		if (p2score === winningScore) {
 			isGameOver = true;
-			spanTwo.classList.add('winner');
-			spanOne.classList.add('loser');
+			spanTwo.classList.add('has-text-success');
+			spanOne.classList.add('has-text-danger');
+			p1button.disabled = true;
+			p2button.disabled = true;
 		}
 		spanTwo.innerText = p2score;
 	}
@@ -47,6 +50,8 @@ function reset() {
 	p2score = 0;
 	spanOne.innerText = p1score;
 	spanTwo.innerText = p2score;
-	spanOne.classList.remove('winner', 'loser');
-	spanTwo.classList.remove('winner', 'loser');
+	spanOne.classList.remove('has-text-success', 'has-text-danger');
+	spanTwo.classList.remove('has-text-success', 'has-text-danger');
+	p1button.disabled = false;
+	p2button.disabled = false;
 }
